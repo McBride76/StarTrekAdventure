@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/landing-background.gif'); 
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    padding: 2.25em;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/* Form and Radio Button */
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 1.75em;
+}
+
+form div {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0 15em;
+    gap: 3em;
+}
+
+.main form {
+    flex: 1;
+}
+
+.race-radio {
+    display: none;
+}
+
+label {
+    display: block;
+    background-color: white;
+    padding: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 100%;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+label:hover {
+    transform: scale(1.05);
+}
+
+.race-radio:checked + label {
+    border: 3px solid #bf0f0f;
+    transform: scale(1.05);
+}
+
+.sd-wrapper, .ld-wrapper {
+    background-color: white;
+    padding: 0 1em;
+    font-size: 1.5em;
+    height: 100%;
+    border-radius: 10px;
+    overflow: auto;
+    text-align: center;
+}
+
+.sd-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+    position: relative;
+    border: 3px solid #fdcd06;
+}
+
+.sd-wrapper div {
+    flex: 1;
+    width: 100%;
+}
+
+.ld-wrapper {
+    flex: 2;
+    border: 3px solid #0099f6;
+}
+
+/* Confirm Button */
+
+.submit-container {
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.btn-confirm {
+    font-size: 1.5em;
+    padding: 0.75em 1.25em;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-confirm:hover {
+    background-color: #0099f6;
+}
+
+#strength {
+    color: green;
+}
+
+#weakness {
+    color: #bf0f0f;
+}
+
+.race-desc {
+    line-height: 1.5em;
+}
+
+.pad-y {
+    padding: 0.75em 0;
+}
+
+.pad-bottom {
+    padding-bottom: 0.75em;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.no-display {
+    display: none;
+}
+
+.more-info-container {
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    color: #0099f6;
+    text-decoration: underline;
+}
+
+#moreInfo {
+    cursor: pointer;
+    font-size: 0.8em;
+}

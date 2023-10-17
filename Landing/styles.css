@@ -1,0 +1,165 @@
+/***** General Styles *****/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/landing-background.gif');
+}
+
+.a-button {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.heading-container {
+    color: white;
+    font-size: 1.75em;
+    margin-bottom: 2.75em;
+}
+
+.centered-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****  landing.php  *****/
+
+.link-container {
+    display: flex;
+    gap: 3em;
+    text-align: center;
+}
+
+#login, #register {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0.75em 1.25em;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#register:hover {
+    color: white;
+    background-color: #bf0f0f;
+    transform: scale(1.01);
+}
+
+#login:hover {
+    background-color: #fdcd06;
+    transform: scale(1.01);
+}
+
+/***** login_page.php AND register_page.php *****/
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25em;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 30%;
+    min-width: 30%;
+}
+
+form p, form input {
+    font-size: 1.2em;
+}
+
+form input {
+    padding: 0.25em;
+    margin-top: 0.25em;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input[type=submit] {
+    font-size: 1em;
+    width: 100%;
+    padding: 0.75em 0.25em;
+    margin-bottom: 0.25em;
+    font-family:  'Quicksand', sans-serif;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+form input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #0099f6;
+    color: black;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    padding: 0.25em 0;
+    text-align: center;
+    color: #bf0f0f;
+}
+
+.login-instead, .register-instead {
+    display: inline-block;
+    margin: auto;
+    padding-top: 0.9em;
+
+}
+
+/***** login_page.php *****/
+
+#loginForm {
+    border: 3px solid #fdcd06;
+}
+
+/***** register_page.php *****/
+
+#registerForm {
+    border: 3px solid #bf0f0f;
+}
+
+.pass-container, .btn-container, .pass2-container,
+.last-name-container, .email-container-register {
+    padding-top: 1em;
+}
+
+/***** activate.php *****/
+
+.back-to-login {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0.75em 1.25em;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.back-to-login:hover {
+    background-color: #fdcd06;
+    transform: scale(1.01);
+}
+
+/*
+#alertBox {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 300px 200px rgba(0,0,0,0.75);
+}
+*/
